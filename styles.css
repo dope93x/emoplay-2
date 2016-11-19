@@ -13,10 +13,10 @@ body {
   margin: 2em;
   background: linear-gradient(270deg, #d7f0e9, #06113a);
   background-size: 400% 400%;
-  -webkit-animation: mvngBckgrnd 9s ease infinite;
-  -moz-animation: mvngBckgrnd 9s ease infinite;
-  -o-animation: mvngBckgrnd 9s ease infinite;
-  animation: mvngBckgrnd 9s ease infinite;
+  -webkit-animation: mvngBckgrnd 20s ease infinite;
+  -moz-animation: mvngBckgrnd 20s ease infinite;
+  -o-animation: mvngBckgrnd 20s ease infinite;
+  animation: mvngBckgrnd 20s ease infinite;
 }
   @-webkit-keyframes mvngBckgrnd {
       0%{background-position:0% 51%}
