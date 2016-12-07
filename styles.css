@@ -10,34 +10,36 @@ h2, h3 {
   font-weight: lighter;
 }
 body {
+  text-align: center;
   margin: 2em;
-  background: linear-gradient(270deg, #d7f0e9, #06113a);
+  background: linear-gradient(161deg, #0e0e0f , #1a1adf );
   background-size: 400% 400%;
-  -webkit-animation: mvngBckgrnd 20s ease infinite;
-  -moz-animation: mvngBckgrnd 20s ease infinite;
-  -o-animation: mvngBckgrnd 20s ease infinite;
-  animation: mvngBckgrnd 20s ease infinite;
+  -webkit-animation: mvngBckgrnd 7s ease infinite;
+  -moz-animation: mvngBckgrnd 7s ease infinite;
+  -o-animation: mvngBckgrnd 7s ease infinite;
+  animation: mvngBckgrnd 7s ease infinite;
 }
+
   @-webkit-keyframes mvngBckgrnd {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
-  }
-  @-moz-keyframes mvngBckgrnd {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
-  }
-  @-o-keyframes mvngBckgrnd {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
-  }
-  @keyframes mvngBckgrnd {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
-  }
+   0%{background-position:18% 0%}
+   50%{background-position:83% 100%}
+   100%{background-position:18% 0%}
+}
+@-moz-keyframes mvngBckgrnd {
+   0%{background-position:18% 0%}
+   50%{background-position:83% 100%}
+   100%{background-position:18% 0%}
+}
+@-o-keyframes mvngBckgrnd {
+   0%{background-position:18% 0%}
+   50%{background-position:83% 100%}
+   100%{background-position:18% 0%}
+}
+@keyframes mvngBckgrnd {
+   0%{background-position:18% 0%}
+   50%{background-position:83% 100%}
+   100%{background-position:18% 0%}
+}
 body, input[text], button {
   color: #888;
   font-family: Cambria, Georgia;
@@ -165,4 +167,14 @@ nav a.router-link-active {
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
+}
+#affdex_elements{
+  position: relative;
+  width:480px;
+  height:480px;
+  margin-left: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  max-width: 100%;
+  margin: auto;
 }
