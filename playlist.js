@@ -1,3 +1,6 @@
+      var emotion;
+      //= document.getElementByClassName('chromoji')[0].title;
+      // var emotion = document.querySelectorAll("span.chromoji,");
       switch(emotion){
           case 'anger':
               $(document).ready(function() {

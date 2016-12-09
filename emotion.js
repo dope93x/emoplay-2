@@ -86,7 +86,6 @@ detector.addEventListener("onImageResultsSuccess", function(faces, image, timest
     drawFeaturePoints(image, faces[0].featurePoints);
   }
 });
-
 //Draw the detected facial feature points on the image
 function drawFeaturePoints(img, featurePoints) {
   var contxt = $('#face_video_canvas')[0].getContext('2d');
