@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+  	<link rel="stylesheet" href="css/pstyle.css" media="screen">
   </head>
   <body>
     <my-app>
@@ -34,8 +35,22 @@
           <h5>Affectiva JS SDK CameraDetector to track different emotions.</h5>
         </div>
       </div>
+      <script type="text/javascript">
+          var emotion = "happiness"
+      </script>
+    <!-- Audio Player HTML -->
+    <div class="audio-player">
+      <h1>ePlayer</h1>
+      <img class="cover" src="img/musicIcon.jpg" width="110" height="114" alt="ePlayer">
+      <audio id="starter" src="media/demo.mp3" type="audio/mp3" controls="controls" hidden="true"></audio>
+      <audio id="happy" src="media/Flo%20Rida%20-%20Good%20Feeling%20%5BOfficial%20Video%5D.mp3" type="audio/mp3" controls="controls" hidden="false"></audio>
+      <audio id="sad" src="media/Passenger%20-%20Let%20her%20go%20-lyrics-.mp3" type="audio/mp3" controls="controls" hidden="false"></audio>
+      <audio id="angry" src="media/Skillet%20-%20Monster%20(Lyrics).mp3" type="audio/mp3" controls="controls" hidden="false"></audio>
+    </div>
     </my-app>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://download.affectiva.com/js/3.1/affdex.js"/>
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -47,5 +62,6 @@
       System.import('app').catch(function(err){ console.error(err); });
     </script>
     <script type="text/javascript" src="emotion.js"></script>
+    <script type="text/javascript" src="playlist.js"></script>
   </body>
 </html>

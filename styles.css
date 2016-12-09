@@ -178,3 +178,8 @@ nav a.router-link-active {
   max-width: 100%;
   margin: auto;
 }
+
+.audio-player{
+  position: relative;
+  margin: auto;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<!--
+
+HOW TO CREATE AN AUDIO PLAYER [TUTORIAL]
+
+"How to create an Audio Player [Tutorial]" was specially made for DesignModo by our friend Valeriu Timbuc.
+
+Links:
+http://vtimbuc.net/
+https://twitter.com/vtimbuc
+http://designmodo.com
+http://vladimirkudinov.com
+
+-->
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>How to Create an Audio Player [Tutorial]</title>
+
+	<!-- Audio Player CSS & Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="css/style.css" media="screen">
+	<!-- end Audio Player CSS & Scripts -->
+
+	<style type="text/css">
+		html, body { margin: 0;	padding: 0; }
+		body { padding: 260px; background: #f2f2f2 url(img/bg.png) no-repeat top center; }
+		.audio-player { margin: 0 auto;}
+	</style>
+<meta name="robots" content="noindex,follow" />
+</head>
+
+<body>
+    <script type="text/javascript">
+        var emotion = "happiness"
+    </script>
+	<!-- Audio Player HTML -->
+	<div class="audio-player">
+		<h1>ePlay
+            
+        
+        
+        </h1>
+        
+		<img class="cover" src="img/cover.png" alt="">
+		<audio id="starter" src="media/demo.mp3" type="audio/mp3" controls="controls" hidden="true"></audio>
+        <audio id="happy" src="media/Flo%20Rida%20-%20Good%20Feeling%20%5BOfficial%20Video%5D.mp3" type="audio/mp3" controls="controls" hidden="true"></audio>
+        <audio id="sad" src="media/Passenger%20-%20Let%20her%20go%20-lyrics-.mp3" type="audio/mp3" controls="controls" hidden="true"></audio>
+        <audio id="angry" src="media/Skillet%20-%20Monster%20(Lyrics).mp3" type="audio/mp3" controls="controls" hidden="hidden"></audio>
+	</div>
+
+	<script>
+        switch(emotion){
+            case 'anger':
+                $(document).ready(function() {
+			         $('#angry').mediaelementplayer({
+				        alwaysShowControls: true,
+				        features: ['playpause','volume','progress'],
+				        audioVolume: 'horizontal',
+				        audioWidth: 400,
+				        audioHeight: 120
+			         });
+		          });
+            break;
+                
+            case "happiness":
+                $(document).ready(function() {
+			         $('#happy').mediaelementplayer({
+                        alwaysShowControls: true,
+                        features: ['playpause','volume','progress'],
+                        audioVolume: 'horizontal',
+                        audioWidth: 400,
+                        audioHeight: 120
+                    });
+                });
+            break;
+                
+            case "sadness":
+                $(document).ready(function() {
+                    $('#sad').mediaelementplayer({
+                        alwaysShowControls: true,
+                        features: ['playpause','volume','progress'],
+                        audioVolume: 'horizontal',
+                        audioWidth: 400,
+                        audioHeight: 120
+                    });
+                });
+            break;
+            
+            default:
+                $(document).ready(function() {
+                    $('#starter').mediaelementplayer({
+                        alwaysShowControls: true,
+                        features: ['playpause','volume','progress'],
+                        audioVolume: 'horizontal',
+                        audioWidth: 400,
+                        audioHeight: 120
+                    });
+                });
+        
+        }
+        
+		/*$(document).ready(function() {
+			$('#angry').mediaelementplayer({
+				alwaysShowControls: true,
+				features: ['playpause','volume','progress'],
+				audioVolume: 'horizontal',
+				audioWidth: 400,
+				audioHeight: 120
+			});
+		});*/
+        
+	</script>
+	<!-- end Audio Player HTML -->
+
+</body>
+
+</html>
