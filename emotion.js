@@ -84,6 +84,8 @@ detector.addEventListener("onImageResultsSuccess", function(faces, image, timest
     }));
     log('#results', "Emoji: " + faces[0].emojis.dominantEmoji);
     drawFeaturePoints(image, faces[0].featurePoints);
+    var motion = face[0].emojis.dominantEmoji;
+    log('#results', motion);
   }
 });
 //Draw the detected facial feature points on the image

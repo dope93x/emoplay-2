@@ -18,7 +18,15 @@
           <div class="col-md-12">
             <div style="height:20em;">
               <strong>EMOTION TRACKING RESULTS</strong>
+
+              <script type="text/javascript">
+                var image = document.getElementsByTagName("img")[0];
+                var title = image.getAttribute("title");
+                console.log(title); // shows the value of title for the element "image"
+              </script>
+               
               <div id="results" style="word-wrap:break-word;"></div>
+
             </div>
           </div>
         </div>
@@ -35,7 +43,7 @@
           <h5>Affectiva JS SDK CameraDetector to track different emotions.</h5>
         </div>
       </div>
-      
+
     <!-- Audio Player HTML -->
     <div class="audio-player">
       <h1>ePlayer</h1>
@@ -56,6 +64,7 @@
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>
+    <script src="playlist.js"></script>
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>

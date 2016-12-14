@@ -1,4 +1,6 @@
-      var emotion;
+      var tag = document.getElementByTagName("img")
+      var emotion= tag.getAttribute("title");
+      console.log(emotion);
       //= document.getElementByClassName('chromoji')[0].title;
       // var emotion = document.querySelectorAll("span.chromoji,");
       switch(emotion){
